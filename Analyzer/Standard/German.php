@@ -22,13 +22,26 @@
 require_once dirname(__FILE__) . '/../Standard.php';
 require_once dirname(__FILE__) . '/../../TokenFilter/EnglishStemmer.php';
 
-class StandardAnalyzer_Analyzer_Standard_English extends StandardAnalyzer_Analyzer_Standard
+class StandardAnalyzer_Analyzer_Standard_German extends StandardAnalyzer_Analyzer_Standard
 {
         private $_stopWords = array(
-        'a', 'an', 'and', 'are', 'as', 'at', 'be', 'but', 'by', 'for', 'if', 'in', 'into', 'is',
-        'it', 'no', 'not', 'of', 'on', 'or', 's', 'such', 't', 'that', 'the', 'their', 'then',
-        'there', 'these', 'they', 'this', 'to', 'was', 'will', 'with',
+          "and", "the", "of", "to", "einer",
+          "eine", "eines", "einem", "einen", "der", "die", "das",
+          "dass", "daß", "du", "er", "sie", "es", "was", "wer",
+          "wie", "wir", "und", "oder", "ohne", "mit", "am", "im",
+          "in", "aus", "auf", "ist", "sein", "war", "wird", "ihr",
+          "ihre", "ihres", "ihnen", "ihrer", "als", "für", "von",
+          "mit", "dich", "dir", "mich", "mir", "mein", "sein",
+          "kein", "durch", "wegen", "wird", "sich", "bei", "beim",
+          "noch", "den", "dem", "zu", "zur", "zum", "auf", "ein",
+          "auch", "werden", "an", "des", "sein", "sind", "vor",
+          "nicht", "sehr", "um", "unsere", "ohne", "so", "da", "nur",
+          "diese", "dieser", "diesem", "dieses", "nach", "über",
+          "mehr", "hat", "bis", "uns", "unser", "unserer", "unserem",
+          "unsers", "euch", "euers", "euer", "eurem", "ihr", "ihres",
+          "ihrer", "ihrem", "alle", "vom" ,
     );
+  
 
     public function __construct()
     {
